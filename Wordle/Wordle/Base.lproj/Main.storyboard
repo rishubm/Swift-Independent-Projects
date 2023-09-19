@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wordle View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WordleViewController" customModule="Wordle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wordle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68r-Jf-8dK">
+                                <rect key="frame" x="10" y="72" width="373" height="44.333333333333343"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vnK-AP-3ZR">
+                                <rect key="frame" x="16" y="136.33333333333337" width="361" height="430"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="T32-mB-fL8">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-dd-PLI" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9Tq-dd-PLI" secondAttribute="height" multiplier="1:1" id="BzV-Yr-Ezm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-7K-zfT" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2gr-7K-zfT" secondAttribute="height" multiplier="1:1" id="m4a-nj-TAu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaY-1u-JdP" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vaY-1u-JdP" secondAttribute="height" multiplier="1:1" id="cov-9g-zz7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-V3-dII" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pfI-V3-dII" secondAttribute="height" multiplier="1:1" id="uKs-Gp-pYz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8x-Tj-KQu" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="d8x-Tj-KQu" secondAttribute="height" multiplier="1:1" id="bu1-5e-U2O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="d8x-Tj-KQu" firstAttribute="width" secondItem="d8x-Tj-KQu" secondAttribute="height" multiplier="1:1" id="2gD-wi-FpF"/>
+                                            <constraint firstItem="2gr-7K-zfT" firstAttribute="width" secondItem="2gr-7K-zfT" secondAttribute="height" multiplier="1:1" id="2rc-sr-jJO"/>
+                                            <constraint firstItem="d8x-Tj-KQu" firstAttribute="width" secondItem="d8x-Tj-KQu" secondAttribute="height" multiplier="1:1" id="LgW-o5-JBd"/>
+                                            <constraint firstItem="vaY-1u-JdP" firstAttribute="width" secondItem="vaY-1u-JdP" secondAttribute="height" multiplier="1:1" id="pPf-xN-nB8"/>
+                                            <constraint firstItem="pfI-V3-dII" firstAttribute="width" secondItem="pfI-V3-dII" secondAttribute="height" multiplier="1:1" id="vIU-IP-nix"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="4Fk-lg-how">
+                                        <rect key="frame" x="0.0" y="73" width="361" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxK-9N-o6g" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KxK-9N-o6g" secondAttribute="height" multiplier="1:1" id="fYl-ND-MzG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uan-2G-pQQ" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Uan-2G-pQQ" secondAttribute="height" multiplier="1:1" id="tIo-AI-0EZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvh-7s-6fm" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Pvh-7s-6fm" secondAttribute="height" multiplier="1:1" id="maO-iU-qpc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-ne-pF7" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xcW-ne-pF7" secondAttribute="height" multiplier="1:1" id="WAz-Hq-A59"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU4-OY-fSU" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FU4-OY-fSU" secondAttribute="height" multiplier="1:1" id="ufS-mZ-OYe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FU4-OY-fSU" firstAttribute="width" secondItem="FU4-OY-fSU" secondAttribute="height" multiplier="1:1" id="0Db-id-Xc5"/>
+                                            <constraint firstItem="FU4-OY-fSU" firstAttribute="width" secondItem="FU4-OY-fSU" secondAttribute="height" multiplier="1:1" id="4DV-ac-Iic"/>
+                                            <constraint firstItem="xcW-ne-pF7" firstAttribute="width" secondItem="xcW-ne-pF7" secondAttribute="height" multiplier="1:1" id="TG4-6g-Ujm"/>
+                                            <constraint firstItem="Pvh-7s-6fm" firstAttribute="width" secondItem="Pvh-7s-6fm" secondAttribute="height" multiplier="1:1" id="Wdo-Sv-6ad"/>
+                                            <constraint firstItem="Uan-2G-pQQ" firstAttribute="width" secondItem="Uan-2G-pQQ" secondAttribute="height" multiplier="1:1" id="a07-h4-IEc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="y7N-j8-N7N">
+                                        <rect key="frame" x="0.0" y="145.99999999999997" width="361" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-D8-WBZ" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RGe-D8-WBZ" secondAttribute="height" multiplier="1:1" id="DLD-5n-nwG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl1-8b-hNC" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Nl1-8b-hNC" secondAttribute="height" multiplier="1:1" id="b6e-NZ-Xm9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yif-Bt-v2W" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Yif-Bt-v2W" secondAttribute="height" multiplier="1:1" id="YoO-a2-DOK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9w-CK-KRc" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="j9w-CK-KRc" secondAttribute="height" multiplier="1:1" id="U7k-CF-1vE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQx-B9-n2B" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="LQx-B9-n2B" secondAttribute="height" multiplier="1:1" id="Wfl-HR-3JA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LQx-B9-n2B" firstAttribute="width" secondItem="LQx-B9-n2B" secondAttribute="height" multiplier="1:1" id="3ql-z8-NOl"/>
+                                            <constraint firstItem="Yif-Bt-v2W" firstAttribute="width" secondItem="Yif-Bt-v2W" secondAttribute="height" multiplier="1:1" id="7fZ-84-GXu"/>
+                                            <constraint firstItem="Nl1-8b-hNC" firstAttribute="width" secondItem="Nl1-8b-hNC" secondAttribute="height" multiplier="1:1" id="Bhe-8U-nId"/>
+                                            <constraint firstItem="LQx-B9-n2B" firstAttribute="width" secondItem="LQx-B9-n2B" secondAttribute="height" multiplier="1:1" id="WyB-JK-dUC"/>
+                                            <constraint firstItem="j9w-CK-KRc" firstAttribute="width" secondItem="j9w-CK-KRc" secondAttribute="height" multiplier="1:1" id="cN8-Ml-kgJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-KN-XzA">
+                                        <rect key="frame" x="0.0" y="218.99999999999997" width="361" height="65.000000000000028"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-Jj-a3u" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cDw-Jj-a3u" secondAttribute="height" multiplier="1:1" id="Qpi-Md-4UO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-d5-fPS" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KAT-d5-fPS" secondAttribute="height" multiplier="1:1" id="z1u-NL-Eml"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-ZP-mme" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wzk-ZP-mme" secondAttribute="height" multiplier="1:1" id="z7h-hd-Kwq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="327-nh-vbV" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="327-nh-vbV" secondAttribute="height" multiplier="1:1" id="uG3-dc-YaG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0R8-5t-mf6" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0R8-5t-mf6" secondAttribute="height" multiplier="1:1" id="G44-JK-aEw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0R8-5t-mf6" firstAttribute="width" secondItem="0R8-5t-mf6" secondAttribute="height" multiplier="1:1" id="05t-a8-2W0"/>
+                                            <constraint firstItem="327-nh-vbV" firstAttribute="width" secondItem="327-nh-vbV" secondAttribute="height" multiplier="1:1" id="Hy3-Oa-9Nm"/>
+                                            <constraint firstItem="0R8-5t-mf6" firstAttribute="width" secondItem="0R8-5t-mf6" secondAttribute="height" multiplier="1:1" id="PoR-Zu-u1g"/>
+                                            <constraint firstItem="wzk-ZP-mme" firstAttribute="width" secondItem="wzk-ZP-mme" secondAttribute="height" multiplier="1:1" id="X2L-GF-4sL"/>
+                                            <constraint firstItem="KAT-d5-fPS" firstAttribute="width" secondItem="KAT-d5-fPS" secondAttribute="height" multiplier="1:1" id="voO-Dv-kOm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="tYa-qm-dQC">
+                                        <rect key="frame" x="0.0" y="292" width="361" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK5-lU-3os" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uK5-lU-3os" secondAttribute="height" multiplier="1:1" id="Cdi-ve-5Iy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOk-Kj-oaK" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uOk-Kj-oaK" secondAttribute="height" multiplier="1:1" id="nSd-Ix-pcp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eya-Pp-qml" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Eya-Pp-qml" secondAttribute="height" multiplier="1:1" id="RCM-YN-Ym3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyU-ed-PYk" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YyU-ed-PYk" secondAttribute="height" multiplier="1:1" id="j7z-W5-SBO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IN1-av-xay" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="IN1-av-xay" secondAttribute="height" multiplier="1:1" id="R0x-xF-CX3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="IN1-av-xay" firstAttribute="width" secondItem="IN1-av-xay" secondAttribute="height" multiplier="1:1" id="PHv-dl-SAB"/>
+                                            <constraint firstItem="YyU-ed-PYk" firstAttribute="width" secondItem="YyU-ed-PYk" secondAttribute="height" multiplier="1:1" id="ajt-p9-fzw"/>
+                                            <constraint firstItem="uOk-Kj-oaK" firstAttribute="width" secondItem="uOk-Kj-oaK" secondAttribute="height" multiplier="1:1" id="fEj-wr-ldp"/>
+                                            <constraint firstItem="Eya-Pp-qml" firstAttribute="width" secondItem="Eya-Pp-qml" secondAttribute="height" multiplier="1:1" id="ipk-kA-1MW"/>
+                                            <constraint firstItem="IN1-av-xay" firstAttribute="width" secondItem="IN1-av-xay" secondAttribute="height" multiplier="1:1" id="rsU-9V-t8H"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="peQ-dh-Vdd">
+                                        <rect key="frame" x="0.0" y="365" width="361" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51p-FW-aKi" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="51p-FW-aKi" secondAttribute="height" multiplier="1:1" id="lsU-yC-Gze"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEx-BQ-d9v" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rEx-BQ-d9v" secondAttribute="height" multiplier="1:1" id="2z4-Zr-Xh3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ly-ab-Ib9" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1Ly-ab-Ib9" secondAttribute="height" multiplier="1:1" id="3T9-1A-g87"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nt-KX-B1b" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0nt-KX-B1b" secondAttribute="height" multiplier="1:1" id="GOO-2S-l7o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nh-9a-fIH" customClass="WordleLabel" customModule="Wordle" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="0.0" width="65" height="65"/>
+                                                <color key="backgroundColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="0nh-9a-fIH" secondAttribute="height" multiplier="1:1" id="Qrq-D4-vMo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="51p-FW-aKi" firstAttribute="width" secondItem="51p-FW-aKi" secondAttribute="height" multiplier="1:1" id="PIR-KX-lsc"/>
+                                            <constraint firstItem="0nh-9a-fIH" firstAttribute="width" secondItem="0nh-9a-fIH" secondAttribute="height" multiplier="1:1" id="Qca-wR-Dgo"/>
+                                            <constraint firstItem="51p-FW-aKi" firstAttribute="width" secondItem="51p-FW-aKi" secondAttribute="height" multiplier="1:1" id="Rld-5q-nzZ"/>
+                                            <constraint firstItem="1Ly-ab-Ib9" firstAttribute="width" secondItem="1Ly-ab-Ib9" secondAttribute="height" multiplier="1:1" id="vTF-N6-efJ"/>
+                                            <constraint firstItem="0nt-KX-B1b" firstAttribute="width" secondItem="0nt-KX-B1b" secondAttribute="height" multiplier="1:1" id="ysJ-Xu-6mZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead Letters: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3K-FC-QmN">
+                                <rect key="frame" x="40" y="671.66666666666663" width="313" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RXF-KE-VCw">
+                                <rect key="frame" x="168" y="735" width="145" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <connections>
+                                    <action selector="changeText:" destination="BYZ-38-t0r" eventType="editingChanged" id="ga6-Of-jbx"/>
+                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="W0P-Xm-SW5"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Word:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgF-f3-QMR">
+                                <rect key="frame" x="40" y="742.66666666666663" width="120" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i58-U0-zHX">
+                                <rect key="frame" x="325" y="53" width="52" height="34.333333333333343"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gear" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="agC-Ja-QbP" kind="popoverPresentation" identifier="settings" popoverAnchorView="i58-U0-zHX" id="p6K-xd-Eon">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CY5-Pf-flM">
+                                <rect key="frame" x="282" y="53" width="49.666666666666686" height="34.333333333333343"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system" title=""/>
+                                <connections>
+                                    <segue destination="DRo-Pp-2x9" kind="popoverPresentation" popoverAnchorView="CY5-Pf-flM" id="Lce-tJ-B1J">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CY5-Pf-flM" secondAttribute="trailing" constant="61.333333333333314" id="7oD-kF-PkW"/>
+                            <constraint firstItem="CY5-Pf-flM" firstAttribute="bottom" secondItem="i58-U0-zHX" secondAttribute="bottom" id="IUr-am-Rk6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y3K-FC-QmN" secondAttribute="bottom" constant="126" id="KGC-NY-ecR"/>
+                            <constraint firstItem="68r-Jf-8dK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="KgK-GP-YaC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3K-FC-QmN" secondAttribute="trailing" constant="40" id="Kpr-24-FGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vnK-AP-3ZR" secondAttribute="trailing" constant="16" id="LKp-Mh-Zj0"/>
+                            <constraint firstItem="y3K-FC-QmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="PaK-uD-YE2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mgF-f3-QMR" secondAttribute="bottom" constant="55" id="QKA-NS-3fw"/>
+                            <constraint firstItem="CY5-Pf-flM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VCc-mE-Ptr"/>
+                            <constraint firstItem="mgF-f3-QMR" firstAttribute="leading" secondItem="y3K-FC-QmN" secondAttribute="leading" id="fhv-6N-SSo"/>
+                            <constraint firstItem="vnK-AP-3ZR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kUS-n6-L2F"/>
+                            <constraint firstItem="i58-U0-zHX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="nGH-CR-gMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="68r-Jf-8dK" secondAttribute="trailing" constant="10" id="paF-UM-PHk"/>
+                            <constraint firstItem="68r-Jf-8dK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="tiN-vA-jN0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mgF-f3-QMR" secondAttribute="trailing" constant="233" id="wba-9O-yWK"/>
+                            <constraint firstItem="vnK-AP-3ZR" firstAttribute="top" secondItem="68r-Jf-8dK" secondAttribute="bottom" constant="20" id="yys-QQ-LSb"/>
+                            <constraint firstItem="i58-U0-zHX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-6" id="zVg-cG-CHk"/>
+                            <constraint firstItem="i58-U0-zHX" firstAttribute="trailing" secondItem="vnK-AP-3ZR" secondAttribute="trailing" id="zjW-DO-hgf"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jsN-KB-afO" appends="YES" id="Bx2-g4-VKM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="dead" destination="y3K-FC-QmN" id="zMG-21-PCl"/>
+                        <outlet property="textFieldOutlet" destination="RXF-KE-VCw" id="tUE-yk-L6f"/>
+                        <outletCollection property="labels" destination="9Tq-dd-PLI" collectionClass="NSMutableArray" id="ioe-v1-xvZ"/>
+                        <outletCollection property="labels" destination="2gr-7K-zfT" collectionClass="NSMutableArray" id="EUR-ss-ZLr"/>
+                        <outletCollection property="labels" destination="vaY-1u-JdP" collectionClass="NSMutableArray" id="7dh-DP-M8x"/>
+                        <outletCollection property="labels" destination="pfI-V3-dII" collectionClass="NSMutableArray" id="ZAI-Yn-llU"/>
+                        <outletCollection property="labels" destination="d8x-Tj-KQu" collectionClass="NSMutableArray" id="utN-WD-waa"/>
+                        <outletCollection property="labels" destination="KxK-9N-o6g" collectionClass="NSMutableArray" id="UGh-kY-d3Q"/>
+                        <outletCollection property="labels" destination="Uan-2G-pQQ" collectionClass="NSMutableArray" id="pjx-z7-0ri"/>
+                        <outletCollection property="labels" destination="Pvh-7s-6fm" collectionClass="NSMutableArray" id="jA1-yL-AaI"/>
+                        <outletCollection property="labels" destination="xcW-ne-pF7" collectionClass="NSMutableArray" id="5CO-XL-hDg"/>
+                        <outletCollection property="labels" destination="FU4-OY-fSU" collectionClass="NSMutableArray" id="OK7-FO-Mgl"/>
+                        <outletCollection property="labels" destination="RGe-D8-WBZ" collectionClass="NSMutableArray" id="ycU-ov-VKy"/>
+                        <outletCollection property="labels" destination="Nl1-8b-hNC" collectionClass="NSMutableArray" id="rTc-FP-rn9"/>
+                        <outletCollection property="labels" destination="Yif-Bt-v2W" collectionClass="NSMutableArray" id="9ts-TI-XpC"/>
+                        <outletCollection property="labels" destination="j9w-CK-KRc" collectionClass="NSMutableArray" id="M94-zT-UUF"/>
+                        <outletCollection property="labels" destination="LQx-B9-n2B" collectionClass="NSMutableArray" id="QQR-yz-kQ5"/>
+                        <outletCollection property="labels" destination="cDw-Jj-a3u" collectionClass="NSMutableArray" id="o98-S1-ekg"/>
+                        <outletCollection property="labels" destination="KAT-d5-fPS" collectionClass="NSMutableArray" id="1tn-db-4Sd"/>
+                        <outletCollection property="labels" destination="wzk-ZP-mme" collectionClass="NSMutableArray" id="jLG-Wp-3EY"/>
+                        <outletCollection property="labels" destination="327-nh-vbV" collectionClass="NSMutableArray" id="Bbv-gK-qWd"/>
+                        <outletCollection property="labels" destination="0R8-5t-mf6" collectionClass="NSMutableArray" id="Jip-Z1-8NJ"/>
+                        <outletCollection property="labels" destination="uK5-lU-3os" collectionClass="NSMutableArray" id="cS4-D2-nyt"/>
+                        <outletCollection property="labels" destination="uOk-Kj-oaK" collectionClass="NSMutableArray" id="nA2-Mm-LMw"/>
+                        <outletCollection property="labels" destination="Eya-Pp-qml" collectionClass="NSMutableArray" id="9JR-uU-jsx"/>
+                        <outletCollection property="labels" destination="YyU-ed-PYk" collectionClass="NSMutableArray" id="YrW-Xd-T6h"/>
+                        <outletCollection property="labels" destination="IN1-av-xay" collectionClass="NSMutableArray" id="ztM-Pc-Vu3"/>
+                        <outletCollection property="labels" destination="51p-FW-aKi" collectionClass="NSMutableArray" id="wY0-b4-swB"/>
+                        <outletCollection property="labels" destination="rEx-BQ-d9v" collectionClass="NSMutableArray" id="Ljz-3K-qO3"/>
+                        <outletCollection property="labels" destination="1Ly-ab-Ib9" collectionClass="NSMutableArray" id="tO5-6R-k82"/>
+                        <outletCollection property="labels" destination="0nt-KX-B1b" collectionClass="NSMutableArray" id="mPq-FT-6Gg"/>
+                        <outletCollection property="labels" destination="0nh-9a-fIH" collectionClass="NSMutableArray" id="5AV-ng-kz0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jsN-KB-afO">
+                    <connections>
+                        <action selector="tapBG:" destination="BYZ-38-t0r" id="Y57-Fw-YIn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z7a-Hi-ZDg">
+            <objects>
+                <viewController id="DRo-Pp-2x9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6p-fF-wCS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="help.png" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-Z0-Igz">
+                                <rect key="frame" x="0.0" y="45" width="431" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kML-u8-Ul0">
+                                <rect key="frame" x="16" y="74" width="361" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BKw-lY-LhH"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kML-u8-Ul0" firstAttribute="leading" secondItem="BKw-lY-LhH" secondAttribute="leading" constant="16" id="Lgb-XH-cQS"/>
+                            <constraint firstItem="kML-u8-Ul0" firstAttribute="centerX" secondItem="y6p-fF-wCS" secondAttribute="centerX" id="s5y-C1-ael"/>
+                            <constraint firstItem="kML-u8-Ul0" firstAttribute="top" secondItem="BKw-lY-LhH" secondAttribute="top" constant="15" id="xap-1K-7iq"/>
+                            <constraint firstItem="BKw-lY-LhH" firstAttribute="bottom" secondItem="kML-u8-Ul0" secondAttribute="bottom" constant="669" id="zjb-0g-3qf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y4K-4a-KMT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLF-WV-5LI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.52671755725191" y="-318.3098591549296"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="cKH-kL-Gj9">
+            <objects>
+                <viewController id="agC-Ja-QbP" customClass="SettingsViewController" customModule="Wordle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nvD-lB-5BG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0O-lX-wDG">
+                                <rect key="frame" x="16" y="107" width="361" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="L3W-Gf-c06">
+                                <rect key="frame" x="31.333333333333343" y="229" width="330.33333333333326" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3x-gk-j39">
+                                        <rect key="frame" x="0.0" y="0.0" width="330.33333333333331" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hard Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngu-P9-teR">
+                                                <rect key="frame" x="0.0" y="0.0" width="281.33333333333331" height="31"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-xW-6a1">
+                                                <rect key="frame" x="281.33333333333337" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="hardModeToggle:" destination="agC-Ja-QbP" eventType="valueChanged" id="1cr-lg-0ao"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9tQ-7Q-AFB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w0O-lX-wDG" firstAttribute="centerX" secondItem="nvD-lB-5BG" secondAttribute="centerX" id="9Vs-nV-wLD"/>
+                            <constraint firstItem="L3W-Gf-c06" firstAttribute="top" secondItem="w0O-lX-wDG" secondAttribute="bottom" constant="82" id="FAU-nF-Dpr"/>
+                            <constraint firstItem="9tQ-7Q-AFB" firstAttribute="bottom" secondItem="w0O-lX-wDG" secondAttribute="bottom" constant="636" id="ZaC-og-gxM"/>
+                            <constraint firstItem="w0O-lX-wDG" firstAttribute="leading" secondItem="9tQ-7Q-AFB" secondAttribute="leading" constant="16" id="asl-bd-q4I"/>
+                            <constraint firstItem="w0O-lX-wDG" firstAttribute="top" secondItem="9tQ-7Q-AFB" secondAttribute="top" constant="48" id="fkC-kE-Ctq"/>
+                            <constraint firstItem="9tQ-7Q-AFB" firstAttribute="trailing" secondItem="L3W-Gf-c06" secondAttribute="trailing" constant="31.329999999999998" id="hu7-Ye-oII"/>
+                            <constraint firstItem="L3W-Gf-c06" firstAttribute="leading" secondItem="9tQ-7Q-AFB" secondAttribute="leading" constant="31.329999999999998" id="mHU-gu-eSL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BkG-PG-Zok"/>
+                    <connections>
+                        <outlet property="hardModeSwitch" destination="Vic-xW-6a1" id="Tf2-NN-XHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeW-Fx-xzK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.52671755725191" y="322.53521126760563"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="help.png" width="322" height="268.5"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

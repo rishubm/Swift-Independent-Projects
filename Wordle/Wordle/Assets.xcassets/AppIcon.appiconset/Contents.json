@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "alpha-wordle-icon-new-square320-v3_upscaled.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

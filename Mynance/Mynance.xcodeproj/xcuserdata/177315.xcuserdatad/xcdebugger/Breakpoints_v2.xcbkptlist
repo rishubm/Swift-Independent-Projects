@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C93EA761-1449-457C-8084-199841F8AC41"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/AddTransactionVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "AddTransactionVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - 6db9e45e2e3c7118"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.picker.getter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - efd829b1866e7904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.picker.setter : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - 4d8f59a85fa5c315"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.picker.modify : Swift.Optional&lt;__C.UIPickerView&gt;"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - 70ab45ca1a8694ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.picker.modify : Swift.Optional&lt;__C.UIPickerView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - ae6e2edb98713f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Mynance.AddTransactionVC"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "591AFB8D-9803-4423-A2A1-87F6024B8DB2 - 9971e47227bf718e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.AddTransactionVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Mynance.AddTransactionVC&gt;"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/AddTransactionVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "169">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67E7625A-84B2-4BD2-8E77-5C52B9E33128"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/AddTransactionVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "amountChanged(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "068E1420-66DD-4E4B-B7C3-0D2D815DDC5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/TransactionListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "unwindToHome(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70F74017-4E92-4E3B-A3FE-549EB723B6C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/TransactionListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "unwindToHome(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2D31817-EF51-4A00-8FDE-4E6829BA6562"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/TransactionListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2D31817-EF51-4A00-8FDE-4E6829BA6562 - 2b9211d1c73d2ffb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.TransactionListVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/TransactionListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2094">
+               </Location>
+               <Location
+                  uuid = "A2D31817-EF51-4A00-8FDE-4E6829BA6562 - 2b9211d1c73d2ffb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mynance.TransactionListVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Mynance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/177315/Desktop/IPs/Mynance/Mynance/TransactionListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "2303">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54A9BA45-6990-4270-AA41-86F11B83C723"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/TransactionListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "updateBalance(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC677E43-72CF-4EAA-B85E-26E2CFBAA34B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mynance/BalanceChartVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getDataSet()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
