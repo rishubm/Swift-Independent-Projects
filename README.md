@@ -3,7 +3,7 @@ This repository displays the progression of my learning of iOS development using
 As I progressed in my learning, I was able to take on more complicated projects with more features, pages, components. I learned the importance of MVC software design pattern when working with larger projects with multiple directories and several source code files.
 
 ## TicTacToe
-TicTacToe independent project built in Swift
+TicTacToe independent project built in Swift, including two-player mode and a mode versus Computer
 ### Demo
 https://github.com/rishubm/TicTacToe/assets/58448683/7c49bb05-a8c5-489d-ba81-fb77f32f53fa
 
