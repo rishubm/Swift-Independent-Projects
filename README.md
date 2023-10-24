@@ -1,5 +1,5 @@
 # Description
-This repository displays the progression of my learning of iOS development using Swift and UIKit through projects I worked on. I have included a demo video below for each of the projects as well as the source code in the repository. 
+This repository displays the progression of my learning of iOS development using Swift and UIKit through projects I worked on from August 2022 to the present. I have included a demo video below for each of the projects as well as the source code in the repository. 
 As I progressed in my learning, I was able to take on more complicated projects with more features, pages, components. I learned the importance of MVC software design pattern when working with larger projects with multiple directories and several source code files.
 
 ## TicTacToe
